@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void)
 {
@@ -6,6 +7,11 @@ int main(void)
 	FILE *arq;
 	
 	arq = fopen(url, "w");
+	if (!arq)
+		{		
+		printf ("Erro na abertura do arquivo");
+		exit(-1);
+		}
 
 	fprintf(arq,"Ola Mundo");
 	fclose(arq);

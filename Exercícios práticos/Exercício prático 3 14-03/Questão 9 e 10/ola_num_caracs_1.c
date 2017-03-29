@@ -9,7 +9,7 @@ int main(int argc,char **argv)
 	while(count<argc)
 	{
 		num=num_caracs(argv[count]);
-		printf("Argumento: %s / Número de caracteres: %d\n",argv[count],num);
+		printf("Argumento: %s / Número   de caracteres: %d\n",argv[count],num);
 		count++;
 			
 	}	
